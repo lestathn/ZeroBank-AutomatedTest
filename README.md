@@ -18,7 +18,7 @@ Node.js 8 and above
 -Installation
 *on Console run*
 1. --$ npm install --save-dev cypress@4.11.0
-2. --$ npm run install
+2. --$ npm install
 
 The next project is an automatic test on site http://zero.webappsecurity.com/index.html using cypress and javascript
 
