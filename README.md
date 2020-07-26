@@ -27,8 +27,3 @@ To open the Cypress UI run on console: npm run cypress:open
 To Open the Cypress Headless run on console: npm run cypress:headless"
 
 To add more test run on console:  touch cypress/integration/{Your Test File}
-
-
-
-
-

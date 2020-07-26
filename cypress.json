@@ -1,3 +1,5 @@
 {
-    "baseUrl": "https://word-nerds-client.herokuapp.com/"
+    "baseUrl": "http://zero.webappsecurity.com/",
+    "user": "username",
+    "password": "password"
 }
