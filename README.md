@@ -1,15 +1,34 @@
 # CypressFlowTest
-Flow Test Using Cypress
+Flow Test Using Cypress on ZeroBank Website
 
-The next project is an automatic test on site https://word-nerds-client.herokuapp.com/ using cypress and javascript
+-Requirement
+**System requirements**
+*Operating System*
+Cypress is a desktop application that is installed on your computer. The desktop application supports these operating systems:
 
-To open the Cypress UI: npm run cypress:open
+1.  1. macOS 10.9 and above (64-bit only)
+1. 2.  Linux Ubuntu 12.04 and above, Fedora 21 and Debian 8 (64-bit only)
+1. 3. Windows 7 and above
 
-To Open the Cypress Headless: npm run cypress:headless"
+*Node.js*
+If you’re using npm to install Cypress, we support:
 
-To add more test:  touch cypress/integration/{Your Test File}
+Node.js 8 and above
+
+-Installation
+*on Console run*
+1. --$ npm install cypress --save-dev
+2. --$ npm run install
+
+The next project is an automatic test on site http://zero.webappsecurity.com/index.html using cypress and javascript
+
+To open the Cypress UI run on console: npm run cypress:open
+
+To Open the Cypress Headless run on console: npm run cypress:headless"
+
+To add more test run on console:  touch cypress/integration/{Your Test File}
 
 
-note: if you running the signUp Test this will fail, you need change the email and user name on the lines 15,16,18,19.
+
 
 

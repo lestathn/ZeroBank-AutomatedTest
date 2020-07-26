@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:headless":"cypress run --headless"
+    "cypress:headless": "cypress run --headless"
   },
   "repository": {
     "type": "git",
