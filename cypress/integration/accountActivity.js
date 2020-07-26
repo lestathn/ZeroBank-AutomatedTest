@@ -18,6 +18,10 @@ before(() => {
     Cypress.Cookies.defaults({
       whitelist: 'session_id'
     })
+    cy.setCookie('JSESSIONID', '773A5315');
+    cy.setCookie('username','username');
+    cy.setCookie('password','password');
+
   })
 
   
@@ -37,21 +41,12 @@ before(() => {
         .should('contain', 'Date')
         .should('contain', 'Description')
         .should('contain', 'Deposit')
-        .should('contain', 'Withdrawal');
-        
-
+        .should('contain', 'Withdrawal');    
      })
 
      it('Check the Savings info', () => { 
-        cy.get('input[id="user_login"]')
-        .type('username');
-        cy.get('input[id="user_password"]')
-        .type('password');
-        cy.get('input[class="btn btn-primary"]').click();
-        cy.get('li[id="account_activity_tab"]').click();
-
         cy.get('select[id="aa_accountId"]')
-        .should('value', '1');
+        .select('1');
         cy.get('table[class="table table-condensed table-hover"]')
         .children()
         .should('contain', 'Date')
@@ -72,9 +67,8 @@ before(() => {
      })
      
      it('Check the Credit Card info', () => { 
-
         cy.get('select[id="aa_accountId"]')
-        .select('Credit Card').should('have.value', '5');
+        .select('5');
         cy.get('table[class="table table-condensed table-hover"]')
         .children()
         .should('contain', 'Date')
