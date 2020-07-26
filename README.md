@@ -22,8 +22,12 @@ Node.js 8 and above
 
 The next project is an automatic test on site http://zero.webappsecurity.com/index.html using cypress and javascript
 
-To open the Cypress UI run on console: npm run cypress:open
+1. To Run this command now, on Using the Cypress UI Console: npm run cypress:open
+*note* these test are preparing for run one by one
 
-To Open the Cypress Headless run on console: npm run cypress:headless"
+2. To Run this command now, on Cypress Headless run on console: npm run cypress:headless"
 
-To add more test run on console:  touch cypress/integration/{Your Test File}
+3. To Run this command now, on console:  touch cypress/integration/{Your Test File}
+
+4. To Run this command now, or in CI.
+cypress run --record --key 99fa4a89-7b2b-4527-9a37-1d41bf80da71

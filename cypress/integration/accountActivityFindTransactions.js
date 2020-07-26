@@ -17,6 +17,9 @@ before(() => {
     Cypress.Cookies.defaults({
       whitelist: 'session_id'
     })
+    cy.setCookie('JSESSIONID', '773A5315');
+    cy.setCookie('username','username');
+    cy.setCookie('password','password');
   })
 
   
@@ -32,13 +35,8 @@ before(() => {
         cy.get('input[id="aa_description"]')
         .type('ONLINE');
 
-        cy.get('button[class="btn btn-primary"]').click();
-        /*.catch((err.message).to('something about the error') => {
-            cy.server();
-            cy.request('POST', 'http://zero.webappsecurity.com/bank/account-activity.html', {currentAccountId:'2', description:'ONLINE'})
-        })*/       
-       
-               
+        cy.get('button[class="btn btn-primary"]').click();  
+        cy.wait(1000);                   ;
         cy.get('table[class="table table-condensed table-hover"]')
         .children()
         .should('contain', 'Date')

@@ -1,5 +1,6 @@
 {
-    "baseUrl": "http://zero.webappsecurity.com/",
-    "user": "username",
-    "password": "password"
+  "baseUrl": "http://zero.webappsecurity.com/",
+  "user": "username",
+  "password": "password",
+  "projectId": "ofee8s"
 }

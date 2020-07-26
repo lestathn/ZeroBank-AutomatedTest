@@ -1,7 +1,6 @@
 before(() => {  
     cy.clearCookies()       
     cy.visit('/')
-    cy.server()
     cy.get("form");
     cy.get('button[id="signin_button"]').click();
     cy.get('input[id="user_login"]')
@@ -15,9 +14,9 @@ before(() => {
   })
     
   beforeEach(()=>{
-    Cypress.Cookies.defaults({
+/*    Cypress.Cookies.defaults({
       whitelist: 'session_id'
-    })
+    })*/
     cy.setCookie('JSESSIONID', '773A5315');
     cy.setCookie('username','username');
     cy.setCookie('password','password');
@@ -42,11 +41,12 @@ before(() => {
         .should('contain', 'Description')
         .should('contain', 'Deposit')
         .should('contain', 'Withdrawal');    
+        
      })
 
      it('Check the Savings info', () => { 
         cy.get('select[id="aa_accountId"]')
-        .select('1');
+        .select('Savings').should('have.value', '1');
         cy.get('table[class="table table-condensed table-hover"]')
         .children()
         .should('contain', 'Date')
@@ -56,15 +56,15 @@ before(() => {
      })
 
      it('Check the Loan info', () => {   
-        cy.get('select[id="aa_accountId"]')
-        .select('4');
-        cy.get('table[class="table table-condensed table-hover"]')
-        .children()
-        .should('contain', 'Date')
-        .should('contain', 'Description')
-        .should('contain', 'Deposit')
-        .should('contain', 'Withdrawal');
-     })
+      cy.get('select[id="aa_accountId"]')
+      .select('4');
+      cy.get('table[class="table table-condensed table-hover"]')
+      .children()
+      .should('contain', 'Date')
+      .should('contain', 'Description')
+      .should('contain', 'Deposit')
+      .should('contain', 'Withdrawal');
+      })
      
      it('Check the Credit Card info', () => { 
         cy.get('select[id="aa_accountId"]')
