@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Automated flow test with cypress",
   "main": "index.js",
-  "dependencies": {
-    "cypress": "^4.7.0"
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.11.0"
   },
-  "devDependencies": {},
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:headless": "cypress run --headless"
