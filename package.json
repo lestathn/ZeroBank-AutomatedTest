@@ -15,10 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/lestathn/CypressFlowTest.git"
   },
-  "author": "Elder Godoy",
+  "author": "Elder David Godoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lestathn/CypressFlowTest/issues"
+    "url": "https://github.com/lestathn/ZeroBank-AutomatedTest/issues"
   },
-  "homepage": "https://github.com/lestathn/CypressFlowTest#readme"
+  "homepage": "https://github.com/lestathn/ZeroBank-AutomatedTest#readme"
 }
